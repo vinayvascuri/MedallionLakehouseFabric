@@ -35,7 +35,7 @@ Data is logically isolated across three distinct **Fabric Lakehouses**:
 ### 3. Serving Layer (Semantic Model & Visualization)
 * **Direct Lake Mode:** The Power BI reporting layer connects directly to the Gold Delta Tables utilizing Microsoft Fabric’s **Direct Lake Mode**. This bypasses traditional data import (`Import Mode`) or slow querying (`DirectQuery`), reading raw Parquet files directly from OneLake with memory-resident performance.
 * **Star Schema Modeling:** Designed a standard dimensional model incorporating a dedicated, programmatic **Date Table** to support comprehensive time-intelligence metrics.
-* **Executive Dashboard:** A multi-page Power BI dashboard showcasing high-level KPIs:
+* **Executive Dashboard:** A Power BI dashboard showcasing high-level KPIs:
     * Cross-filtering slicers (Year, Month, Product Category).
     * Top 5 rankings (Top products by sales value, top products by sentiment, top customers).
     * Time-series tracking (Sales trend by month to spot cyclical patterns or operational friction).
